@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роли на сервере</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #1a1a2e, #16213e);
+            color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #6a5acd;
+            text-align: center;
+            margin-top: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .role-category {
+            width: 80%;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .role-category h2 {
+            font-size: 2.5em;
+            color: #8a2be2;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .role-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .role-item {
+            font-size: 1.4em;
+            margin: 12px 0;
+            padding: 12px;
+            border-left: 5px solid #6a5acd;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .role-item:hover {
+            background-color: rgba(106, 90, 205, 0.2);
+        }
+
+        .role-description {
+            font-size: 1em;
+            color: #bbb;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        /* Дополнительные стили для разделителей */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, #6a5acd, #8a2be2);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Роли на сервере</h1>
+
+    <!-- Игровые роли -->
+    <div class="role-category">
+        <h2>Игровые роли 🎮</h2>
+        <ul class="role-list">
+            <li class="role-item">Terraria <p class="role-description">Роль для игроков, которые играют в Terraria.</p></li>
+            <li class="role-item">WarThunder <p class="role-description">Роль для игроков, которые играют в WarThunder.</p></li>
+            <li class="role-item">Marval Rivals <p class="role-description">Роль для игроков, которые играют в Marval Rivals.</p></li>
+            <li class="role-item">Buckshot Roulette <p class="role-description">Роль для игроков, которые играют в Buckshot Roulette.</p></li>
+            <li class="role-item">Бункер <p class="role-description">Роль для игроков, которые играют в Бункер.</p></li>
+            <li class="role-item">CS 2 <p class="role-description">Роль для игроков, которые играют в CS 2.</p></li>
+            <li class="role-item">The Forest <p class="role-description">Роль для игроков, которые играют в The Forest.</p></li>
+            <li class="role-item">SCP:SL <p class="role-description">Роль для игроков, которые играют в SCP:SL.</p></li>
+            <li class="role-item">Minecraft <p class="role-description">Роль для игроков, которые играют в Minecraft.</p></li>
+            <li class="role-item">Lethal Company <p class="role-description">Роль для игроков, которые играют в Lethal Company.</p></li>
+            <li class="role-item">HOI4 <p class="role-description">Роль для игроков, которые играют в HOI4.</p></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Роли Ботов -->
+    <div class="role-category">
+        <h2>Роли Ботов 🤖</h2>
+        <ul class="role-list">
+            <li class="role-item">Бот <p class="role-description">Роль для бота на сервере.</p></li>
+            <li class="role-item">LoggerBot <p class="role-description">Роль для бота, который отслеживает логи сервера.</p></li>
+            <li class="role-item">VoiceMaster <p class="role-description">Роль для бота, который управляет голосовыми каналами.</p></li>
+            <li class="role-item">Carl-Bot <p class="role-description">Роль для бота Carl, который помогает с командами.</p></li>
+            <li class="role-item">Disco <p class="role-description">Роль для бота Disco, который управляет музыкальными каналами.</p></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Основные Роли -->
+    <div class="role-category">
+        <h2>Основные Роли ⚙️</h2>
+        <ul class="role-list">
+            <li class="role-item">Гость <p class="role-description">Начальная роль при вступлении на сервер.</p></li>
+            <li class="role-item">Олд <p class="role-description">Роль для олдов сервера Classic Server HellDoor 2024г.</p></li>
+            <li class="role-item">Модератор <p class="role-description">Роль для модераторов сервера Western Classic.</p></li>
+            <li class="role-item">Админ Дс <p class="role-description">Роль для администраторов сервера Western Classic.</p></li>
+            <li class="role-item">Контент Мейкер <p class="role-description">Роль для создателей контента на сервере Western Classic.</p></li>
+            <li class="role-item">Server Booster <p class="role-description">Роль для тех, кто поддерживает сервер бустом.</p></li>
+            <li class="role-item">Доверенный <p class="role-description">Роль для тех, кому доверяют владельцы сервера.</p></li>
+            <li class="role-item">Активный <p class="role-description">Роль для активных участников сервера.</p></li>
+            <li class="role-item">VKонтактер <p class="role-description">Роль для тех, кто постит много NSFW контента в 18+ Канал.</p></li>
+            <li class="role-item">Скуф 18+ <p class="role-description">Роль для тех, кому больше 18 лет.</p></li>
+            <li class="role-item">Владелец <p class="role-description">Роль для владельцев сервера Western Classic.</p></li>
+            <li class="role-item">Вумен <p class="role-description">Роль для девушек на сервере.</p></li>
+            <li class="role-item">В отставке <p class="role-description">Роль для бывших хелперов и админов.</p></li>
+            <li class="role-item">Твинк <p class="role-description">Роль для аккаунтов, которые не активны или для второго аккаунта.</p></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Территориальные роли -->
+    <div class="role-category">
+        <h2>Территориальные роли 🏴</h2>
+        <ul class="role-list">
+            <li class="role-item">Бандеровец <p class="role-description">Роль для пользователей из Украины.</p></li>
+            <li class="role-item">Intelectual kotokbas <p class="role-description">Роль для пользователей из Казахстана.</p></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Админ проектов -->
+    <div class="role-category">
+        <h2>Админ проектов</h2>
+        <ul class="role-list">
+            <li class="role-item">Админ HellDoor <p class="role-description">Роль для администраторов серверов HellDoor.</p></li>
+            <li class="role-item">Админ DX <p class="role-description">Роль для администраторов серверов DX.</p></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Рофл роли -->
+    <div class="role-category">
+        <h2>Рофл роли 🤡</h2>
+        <ul class="role-list">
+            <li class="role-item">Dambass <p class="role-description">Роль для тех, кто зовется Дамбасс.</p></li>
+            <li class="role-item">Полиция Моды <p class="role-description">Роль для модников сервера.</p></li>
+            <li class="role-item">MachoMan <p class="role-description">Роль для тех, кто считает себя мужчиной.</p></li>
+            <li class="role-item">Мыло <p class="role-description">Роль для тех, кто уронил мыло в тюрьме.</p></li>
+            <li class="role-item">Sosal <p class="role-description">Роль для определенного типа участников.</p></li>
+            <li class="role-item">МАНГУСТ <p class="role-description">Не заслужил описание.</p></li>
+            <li class="role-item">Нейросеть <p class="role-description">Роль для роботов, которые не существуют.</p></li>
+            <li class="role-item">Сексист <p class="role-description">Роль для тех, кто придерживается сексистских взглядов.</p></li>
+            <li class="role-item">Гей <p class="role-description">Роль для гей-участников.</p></li>
+            <li class="role-item">Фурри <p class="role-description">Роль для любителей фурри-культуры.</p></li>
+            <li class="role-item">Эльдорадо <p class="role-description">Роль для тех, кто любит Эльдорадо.</p></li>
+            <li class="role-item">Troll <p class="role-description">Роль для троллей на сервере.</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>
